@@ -207,12 +207,7 @@ h3 {
 }
 
 .gradient-text {
-    background: var(--gradient);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient-shift 4s ease infinite;
+    color: inherit;
 }
 
 .accent {
@@ -725,31 +720,13 @@ h3 {
 }
 
 .service-icon {
-    width: 56px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
-    background: rgba(34, 197, 94, 0.08);
-    border: 1px solid rgba(34, 197, 94, 0.15);
     margin-bottom: 20px;
-    position: relative;
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.05);
-    transition: all 0.4s var(--ease);
-}
-
-.service-card:hover .service-icon {
-    background: rgba(34, 197, 94, 0.12);
-    border-color: rgba(34, 197, 94, 0.3);
-    box-shadow: 0 0 30px rgba(34, 197, 94, 0.15);
-    transform: scale(1.05);
 }
 
 .service-icon svg {
-    width: 28px;
-    height: 28px;
-    stroke: url(#icon-gradient);
+    width: 36px;
+    height: 36px;
+    stroke: #ffffff;
     stroke-width: 1.75;
 }
 
@@ -827,30 +804,13 @@ h3 {
 }
 
 .step-icon {
-    width: 64px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    background: rgba(34, 197, 94, 0.08);
-    border: 1px solid rgba(34, 197, 94, 0.15);
-    margin: 0 auto 20px;
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.05);
-    transition: all 0.4s var(--ease);
-}
-
-.step-card:hover .step-icon {
-    background: rgba(34, 197, 94, 0.12);
-    border-color: rgba(34, 197, 94, 0.3);
-    box-shadow: 0 0 30px rgba(34, 197, 94, 0.15);
-    transform: scale(1.05);
+    margin-bottom: 20px;
 }
 
 .step-icon svg {
-    width: 32px;
-    height: 32px;
-    stroke: url(#icon-gradient);
+    width: 40px;
+    height: 40px;
+    stroke: #ffffff;
     stroke-width: 1.75;
 }
 
@@ -1005,30 +965,13 @@ h3 {
 }
 
 .benefit-icon {
-    width: 52px;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 14px;
-    background: rgba(34, 197, 94, 0.08);
-    border: 1px solid rgba(34, 197, 94, 0.15);
     margin-bottom: 18px;
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.05);
-    transition: all 0.4s var(--ease);
-}
-
-.benefit-card:hover .benefit-icon {
-    background: rgba(34, 197, 94, 0.12);
-    border-color: rgba(34, 197, 94, 0.3);
-    box-shadow: 0 0 30px rgba(34, 197, 94, 0.15);
-    transform: scale(1.05);
 }
 
 .benefit-icon svg {
-    width: 26px;
-    height: 26px;
-    stroke: url(#icon-gradient);
+    width: 32px;
+    height: 32px;
+    stroke: #ffffff;
     stroke-width: 1.75;
 }
 
@@ -1088,22 +1031,13 @@ h3 {
 }
 
 .fact-icon {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    background: rgba(34, 197, 94, 0.08);
-    border: 1px solid rgba(34, 197, 94, 0.15);
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    flex-shrink: 0;
 }
 
 .fact-icon svg {
-    width: 20px;
-    height: 20px;
-    stroke: url(#icon-gradient);
+    width: 24px;
+    height: 24px;
+    stroke: #ffffff;
     stroke-width: 1.75;
 }
 
