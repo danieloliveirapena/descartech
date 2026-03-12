@@ -1333,17 +1333,29 @@ h3 {
     }
 
     .earth-emoji {
-        font-size: 4rem;
+        width: 80px;
+        height: 80px;
     }
 
     .orbit-1 {
         width: 140px;
         height: 140px;
+        margin-top: -70px;
+        margin-left: -70px;
     }
 
     .orbit-2 {
         width: 180px;
         height: 180px;
+        margin-top: -90px;
+        margin-left: -90px;
+    }
+
+    .recycle-icon {
+        width: 18px;
+        height: 18px;
+        top: -9px;
+        left: calc(50% - 9px);
     }
 }
 
