@@ -1280,7 +1280,7 @@ h3 {
 }
 
 .footer-links a:hover {
-    color: var(--green-400);
+    color: #ffffff;
 }
 
 .footer-contact {
@@ -1295,7 +1295,7 @@ h3 {
 }
 
 .footer-contact a:hover {
-    color: var(--green-400);
+    color: #ffffff;
 }
 
 .footer-contact p {
