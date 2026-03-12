@@ -575,7 +575,7 @@ h3 {
 }
 
 .hero-sub strong {
-    color: var(--green-400);
+    color: #ffffff;
 }
 
 .hero-actions {
@@ -607,13 +607,13 @@ h3 {
 .stat-number {
     font-size: 2rem;
     font-weight: 800;
-    color: var(--green-400);
+    color: #ffffff;
 }
 
 .stat-suffix {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--green-400);
+    color: #ffffff;
 }
 
 .stat-label {
@@ -1024,7 +1024,7 @@ h3 {
 }
 
 .fact strong {
-    color: var(--green-400);
+    color: #ffffff;
 }
 
 .fact-icon {
