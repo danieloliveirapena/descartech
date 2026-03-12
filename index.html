@@ -1302,6 +1302,21 @@
             });
 
 
+            // Intersection Observer for animations
+            const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.service-card, .step-card, .benefit-card, .faq-item, .impact-wrapper, .hero-stats, .hero-content, .cta-card, .services-image').forEach(el => {
+                el.classList.add('animate-on-scroll');
+                observer.observe(el);
+            });
+
             // FAQ toggle
             document.querySelectorAll('.faq-question').forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -1316,6 +1331,22 @@
                         btn.setAttribute('aria-expanded', 'true');
                     }
                 });
+            });
+
+            // Staggered animation for grid items
+            document.querySelectorAll('.services-grid, .steps-grid, .benefits-grid, .faq-list').forEach(grid => {
+                const gridObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const children = entry.target.children;
+                            Array.from(children).forEach((child, i) => {
+                                child.style.transitionDelay = `${i * 0.08}s`;
+                                child.classList.add('visible');
+                            });
+                        }
+                    });
+                }, { threshold: 0.1 });
+                gridObserver.observe(grid);
             });
         });
     </script>
