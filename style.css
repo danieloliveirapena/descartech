@@ -208,6 +208,7 @@ h3 {
 
 .gradient-text {
     color: inherit;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.2);
 }
 
 .accent {
@@ -792,11 +793,7 @@ h3 {
 .step-number {
     font-size: 3rem;
     font-weight: 900;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0.2;
+    color: rgba(255, 255, 255, 0.15);
     position: absolute;
     top: 16px;
     right: 20px;
