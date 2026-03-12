@@ -575,7 +575,7 @@ h3 {
 }
 
 .hero-sub strong {
-    color: #ffffff;
+    color: var(--green-400);
 }
 
 .hero-actions {
@@ -607,13 +607,13 @@ h3 {
 .stat-number {
     font-size: 2rem;
     font-weight: 800;
-    color: #ffffff;
+    color: var(--green-400);
 }
 
 .stat-suffix {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--green-400);
 }
 
 .stat-label {
@@ -1024,7 +1024,7 @@ h3 {
 }
 
 .fact strong {
-    color: #ffffff;
+    color: var(--green-400);
 }
 
 .fact-icon {
@@ -1280,7 +1280,7 @@ h3 {
 }
 
 .footer-links a:hover {
-    color: #ffffff;
+    color: var(--green-400);
 }
 
 .footer-contact {
@@ -1295,7 +1295,7 @@ h3 {
 }
 
 .footer-contact a:hover {
-    color: #ffffff;
+    color: var(--green-400);
 }
 
 .footer-contact p {
