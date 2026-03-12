@@ -30,15 +30,16 @@
         content="Descarte lixo eletrônico da sua empresa com custo zero. Coleta gratuita em toda a Grande São Paulo, certificado de destinação final e destruição segura de dados.">
     <meta property="twitter:image" content="https://descartech.com.br/img/hero.png">
 
-    <link rel="preload" href="style.css?v=13" as="style" fetchpriority="high">
+    <link rel="preload" href="style.css?v=11" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"
-        media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
     <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
     </noscript>
-    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="style.css?v=11">
 </head>
 
 <body>
@@ -46,8 +47,14 @@
     <svg width="0" height="0" style="position:absolute" aria-hidden="true">
         <defs>
             <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#4ade80" />
-                <stop offset="100%" stop-color="#06b6d4" />
+                <stop offset="0%" stop-color="#4ade80">
+                    <animate attributeName="stop-color" values="#4ade80;#06b6d4;#4ade80" dur="4s"
+                        repeatCount="indefinite" />
+                </stop>
+                <stop offset="100%" stop-color="#06b6d4">
+                    <animate attributeName="stop-color" values="#06b6d4;#4ade80;#06b6d4" dur="4s"
+                        repeatCount="indefinite" />
+                </stop>
             </linearGradient>
 
             <!-- Recycle Icon Symbol (Simplified for Performance) -->
@@ -393,7 +400,7 @@
         </div>
     </section>
 
-    <section id="servicos" class="section" style="content-visibility:auto;contain-intrinsic-size:auto 800px;">
+    <section id="servicos" class="section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Nossos Serviços</span>
@@ -466,8 +473,7 @@
         </div>
     </section>
 
-    <section id="como-funciona" class="section section-dark"
-        style="content-visibility:auto;contain-intrinsic-size:auto 700px;">
+    <section id="como-funciona" class="section section-dark">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Simples e Rápido</span>
@@ -531,8 +537,7 @@
         </div>
     </section>
 
-    <section id="nossa-frota" class="section section-fleet"
-        style="content-visibility:auto;contain-intrinsic-size:auto 500px;">
+    <section id="nossa-frota" class="section section-fleet">
         <div class="container">
             <div class="fleet-wrapper">
                 <div class="fleet-content">
@@ -552,7 +557,7 @@
         </div>
     </section>
 
-    <section id="impacto" class="section" style="content-visibility:auto;contain-intrinsic-size:auto 800px;">
+    <section id="impacto" class="section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Nossos Diferenciais</span>
@@ -628,8 +633,7 @@
         </div>
     </section>
 
-    <section class="section section-dark" id="impacto-ambiental"
-        style="content-visibility:auto;contain-intrinsic-size:auto 600px;">
+    <section class="section section-dark" id="impacto-ambiental">
         <div class="container">
             <div class="impact-wrapper">
                 <div class="impact-content">
@@ -763,7 +767,7 @@
         </div>
     </section>
 
-    <section id="faq" class="section" style="content-visibility:auto;contain-intrinsic-size:auto 600px;">
+    <section id="faq" class="section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Dúvidas Frequentes</span>
@@ -825,7 +829,7 @@
         </div>
     </section>
 
-    <section class="section-cta" style="content-visibility:auto;contain-intrinsic-size:auto 400px;">
+    <section class="section-cta">
         <div class="container">
             <div class="cta-card">
                 <div class="cta-glow"></div>
@@ -849,7 +853,7 @@
         </div>
     </section>
 
-    <footer id="footer" style="content-visibility:auto;contain-intrinsic-size:auto 400px;">
+    <footer id="footer">
         <div class="container footer-inner">
             <div class="footer-brand">
                 <a href="index.html#" aria-label="DescarTech - Página inicial"><svg class="logo-img"
