@@ -99,17 +99,6 @@ a {
    ANIMATIONS
    ======================================== */
 
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
-}
-
-.animate-on-scroll.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 
 
 @keyframes float {
@@ -1021,6 +1010,7 @@ h3 {
     align-items: center;
     justify-content: center;
     animation: float 4s ease-in-out infinite;
+    will-change: transform;
 }
 
 .earth-emoji svg {
@@ -1042,6 +1032,7 @@ h3 {
     margin-top: -100px;
     margin-left: -100px;
     animation: spin-slow 20s linear infinite;
+    will-change: transform;
 }
 
 .orbit-2 {
@@ -1050,6 +1041,7 @@ h3 {
     margin-top: -130px;
     margin-left: -130px;
     animation: spin-slow 30s linear infinite reverse;
+    will-change: transform;
 }
 
 .recycle-icon {
@@ -1079,8 +1071,8 @@ h3 {
     border-radius: var(--radius-md);
     overflow: hidden;
     transition: all 0.4s var(--ease-spring);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
 }
 
