@@ -1235,19 +1235,21 @@ h3 {
 }
 
 .footer-brand p {
-    color: var(--text-muted);
+    color: var(--text-secondary);
     margin-top: 12px;
     font-size: 0.9rem;
     line-height: 1.6;
 }
 
-.footer-links h4,
-.footer-contact h4 {
+.footer-links h3,
+.footer-contact h3 {
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--text-muted);
+    color: var(--text-secondary);
     margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 1.15;
 }
 
 .footer-links {
@@ -1291,7 +1293,7 @@ h3 {
 }
 
 .footer-bottom p {
-    color: var(--text-muted);
+    color: var(--text-secondary);
     font-size: 0.8rem;
     text-align: center;
 }
