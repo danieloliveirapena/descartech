@@ -40,6 +40,15 @@
             rel="stylesheet">
     </noscript>
     <link rel="stylesheet" href="style.css?v=12">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18004609268"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18004609268');
+    </script>
 </head>
 
 <body>
@@ -1097,6 +1106,13 @@
                         btn.setAttribute('aria-expanded', 'true');
                     }
                 });
+            });
+        });
+
+        // Google Ads - Conversão: Clique no Botão WhatsApp
+        document.querySelectorAll('a[href*="whatsapp"], a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', () => {
+                gtag('event', 'conversion', {'send_to': 'AW-18004609268/jD_NCPqW1oYcEPSRoolD'});
             });
         });
     </script>
