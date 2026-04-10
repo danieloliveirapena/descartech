@@ -30,7 +30,7 @@
         content="Descarte lixo eletrônico da sua empresa com custo zero. Coleta gratuita em toda a Grande São Paulo, certificado de destinação final e destruição segura de dados.">
     <meta property="twitter:image" content="https://descartech.com.br/img/hero.png">
 
-    <link rel="preload" href="style.css?v=12" as="style">
+    <link rel="preload" href="style.css?v=13" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
@@ -39,15 +39,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
             rel="stylesheet">
     </noscript>
-    <link rel="stylesheet" href="style.css?v=12">
+    <link rel="stylesheet" href="style.css?v=13">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18004609268"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-18004609268');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-18004609268');
     </script>
 </head>
 
@@ -531,27 +531,62 @@
         </div>
     </section>
 
-    <section id="nossa-frota" class="section section-fleet">
+    <section id="nossa-operacao" class="section section-fleet">
         <div class="container">
-            <div class="fleet-wrapper">
-                <div class="fleet-content">
-                    <span class="section-tag">Operação Própria</span>
-                    <h2>Nossa frota, <span class="gradient-text">sua tranquilidade.</span></h2>
-                    <p>Contamos com frota própria para realizar a coleta diretamente na sua empresa. Sem terceiros, sem
-                        complicação - do agendamento até a entrega do certificado, tudo feito pela DescarTech.</p>
-
+            <div class="section-header">
+                <span class="section-tag">Operação Própria</span>
+                <h2>Nossa <span class="gradient-text">operação</span></h2>
+                <p>Frota e estrutura própria. Do agendamento ao certificado, tudo feito pela DescarTech.</p>
+            </div>
+            <div class="fleet-bento">
+                <div class="fleet-card fleet-card--main">
+                    <img src="galpao.webp"
+                        alt="Galpão de processamento da DescarTech com materiais eletrônicos separados para reciclagem"
+                        class="fleet-card__img" loading="lazy" width="800" height="534">
+                    <div class="fleet-card__overlay"></div>
+                    <div class="fleet-card__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+                            <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+                            <path d="M10 6h4" />
+                            <path d="M10 10h4" />
+                            <path d="M10 14h4" />
+                            <path d="M10 18h4" />
+                        </svg>
+                        <span>Centro de processamento próprio</span>
+                    </div>
                 </div>
-                <div class="fleet-image-wrap">
+                <div class="fleet-card fleet-card--secondary">
                     <img src="caminhao.webp"
                         alt="Caminhão da DescarTech com logo da empresa - coleta corporativa gratuita de eletrônicos em São Paulo"
-                        class="fleet-img" loading="lazy" width="665" height="499">
-
+                        class="fleet-card__img" loading="lazy" width="665" height="499">
+                    <div class="fleet-card__overlay"></div>
+                    <div class="fleet-card__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                            <path d="M15 18H9" />
+                            <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                            <circle cx="17" cy="18" r="2" />
+                            <circle cx="7" cy="18" r="2" />
+                        </svg>
+                        <span>Frota própria para coleta</span>
+                    </div>
+                </div>
+                <div class="fleet-card fleet-card--stat">
+                    <div class="fleet-stat-content">
+                        <span class="fleet-stat-number gradient-text">100%</span>
+                        <span class="fleet-stat-label">Operação<br>própria</span>
+                    </div>
+                    <p class="fleet-stat-desc">Sem terceiros envolvidos em nenhuma etapa do processo.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="impacto" class="section">
+    <section id="impacto" class="section section-dark">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Nossos Diferenciais</span>
@@ -566,7 +601,7 @@
                             <path d="m9 12 2 2 4-4" />
                         </svg></div>
                     <h3>Destruição de Dados</h3>
-                    <p>Apagamos seus dados com segurança total. HDs, SSDs e celulares - nenhuma informação vaza.</p>
+                    <p>Apagamos seus dados com segurança total. HDs, SSDs e celulares — nenhuma informação vaza.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -627,7 +662,7 @@
         </div>
     </section>
 
-    <section class="section section-dark" id="impacto-ambiental">
+    <section class="section" id="impacto-ambiental">
         <div class="container">
             <div class="impact-wrapper">
                 <div class="impact-content">
@@ -720,7 +755,7 @@
         </div>
     </section>
 
-    <section id="faq" class="section">
+    <section id="faq" class="section section-dark">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Dúvidas Frequentes</span>
@@ -753,7 +788,7 @@
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p><strong>Sim!</strong> Funcionando, quebrado, antigo - a gente aceita tudo. O importante é não
+                        <p><strong>Sim!</strong> Funcionando, quebrado, antigo — a gente aceita tudo. O importante é não
                             jogar no lixo comum.</p>
                     </div>
                 </div>
@@ -782,7 +817,7 @@
         </div>
     </section>
 
-    <section class="section-cta">
+    <section class="section-cta section-dark">
         <div class="container">
             <div class="cta-card">
                 <div class="cta-glow"></div>
@@ -1112,7 +1147,7 @@
         // Google Ads - Conversão: Clique no Botão WhatsApp
         document.querySelectorAll('a[href*="whatsapp"], a[href*="wa.me"]').forEach(link => {
             link.addEventListener('click', () => {
-                gtag('event', 'conversion', {'send_to': 'AW-18004609268/jD_NCPqW1oYcEPSRoolD'});
+                gtag('event', 'conversion', { 'send_to': 'AW-18004609268/jD_NCPqW1oYcEPSRoolD' });
             });
         });
     </script>

@@ -793,101 +793,149 @@ h3 {
 }
 
 /* ========================================
-   FLEET SECTION
+   FLEET / OPERATION SECTION (Bento Grid)
    ======================================== */
 
 .section-fleet {
-    background: var(--bg-secondary);
+    /* uses default bg-primary for alternation with section-dark above */
 }
 
-.fleet-wrapper {
+.fleet-bento {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: center;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
 }
 
-.fleet-content .section-tag {
-    margin-bottom: 16px;
+.fleet-card {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    border: 1px solid var(--border);
 }
 
-.fleet-content h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
+.fleet-card--main {
+    grid-row: 1 / 3;
+    min-height: 420px;
 }
 
-.fleet-content>p {
-    color: var(--text-secondary);
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 32px;
+.fleet-card--secondary {
+    min-height: 200px;
 }
 
-.fleet-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.fleet-card--stat {
     display: flex;
     flex-direction: column;
-    gap: 14px;
-}
-
-.fleet-list li {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 12px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--text-primary);
-}
-
-.fleet-list li svg {
-    color: var(--green-400);
-    flex-shrink: 0;
-}
-
-.fleet-image-wrap {
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--bg-card);
     position: relative;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
 }
 
-.fleet-img {
+.fleet-stat-content {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.fleet-stat-number {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.fleet-stat-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.fleet-stat-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.fleet-card__img {
     width: 100%;
-    border-radius: var(--radius-xl);
-    border: 1px solid var(--border-highlight);
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
-.fleet-badge {
+.fleet-card__overlay {
     position: absolute;
-    bottom: -16px;
-    left: 24px;
+    inset: 0;
+    background: linear-gradient(180deg,
+            transparent 40%,
+            rgba(10, 10, 15, 0.85) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.fleet-card__badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 20px;
-    background: var(--bg-primary);
-    border: 1px solid var(--border-highlight);
+    gap: 10px;
+    padding: 10px 18px;
+    background: rgba(10, 10, 15, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-pill);
-    font-size: 0.9rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fleet-card__badge svg {
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.fleet-card__badge span {
+    font-size: 0.85rem;
     font-weight: 600;
-    color: var(--text-primary);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    color: #fff;
+    white-space: nowrap;
 }
 
-.fleet-badge strong {
-    color: var(--green-400);
-}
-
-@media (max-width: 900px) {
-    .fleet-wrapper {
+@media (max-width: 768px) {
+    .fleet-bento {
         grid-template-columns: 1fr;
-        gap: 40px;
+        grid-template-rows: auto;
     }
 
-    .fleet-image-wrap {
-        margin-bottom: 24px;
+    .fleet-card--main {
+        grid-row: auto;
+        min-height: 260px;
+    }
+
+    .fleet-card--secondary {
+        min-height: 200px;
+    }
+
+    .fleet-card--stat {
+        padding: 28px 20px;
+    }
+
+    .fleet-stat-number {
+        font-size: 2.2rem;
     }
 }
 
